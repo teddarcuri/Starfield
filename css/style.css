@@ -1,0 +1,166 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@-webkit-keyframes twinkle {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.2;
+    -webkit-transform: scale(1.25);
+  }
+
+  100% {
+    opacity: 0.8;
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes twinkle {
+  0% {
+    opacity: 0.8;
+  }
+
+  50% {
+    opacity: 0.2;
+    transform: scale(3);
+  }
+
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@-o-keyframes twinkle {
+  0% {
+    opacity: 0.8;
+  }
+
+  50% {
+    opacity: 0.2;
+    transform: scale(3);
+  }
+
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.8;
+  }
+
+  50% {
+    opacity: 0.2;
+    transform: scale(3);
+  }
+
+  100% {
+    opacity: 0.8;
+  }
+}
+
+#starfield {
+  width: 100%;
+  height: 750px;
+  background: black;
+  position: relative;
+}
+
+.white-dwarf {
+  width: 0.12em;
+  height: 0.12em;
+  box-shadow: 0px 0px #fff;
+  background: #fff;
+  border-radius: 200%;
+  position: absolute;
+  display: inline-block;
+  opacity: 0.8;
+}
+
+.yellow-dwarf {
+  width: 0.15em;
+  height: 0.15em;
+  box-shadow: 0px 0px 1px 0px #fff;
+  background: #79d2f7;
+  border-radius: 200%;
+  position: absolute;
+  display: inline-block;
+  opacity: 0.8;
+}
+
+.blue-dwarf {
+  width: 0.1em;
+  height: 0.1em;
+  box-shadow: 0px 0px #fff;
+  background: #fff;
+  border-radius: 200%;
+  position: absolute;
+  display: inline-block;
+  opacity: 0.8;
+}
+
+.red-giant {
+  width: 0.05em;
+  height: 0.05em;
+  box-shadow: 0px 0px  #fff;
+  background: #79d2f7;
+  border-radius: 200%;
+  position: absolute;
+  display: inline-block;
+  opacity: 0.8;
+}

@@ -1,0 +1,45 @@
+// Browser reset
+@import "reset";
+
+// Settings
+@import "variables";
+@import "mixins";
+
+
+// Twinkle Animation
+@include twinkle();
+
+#starfield {
+	width: 100%; height: $starfieldheight;
+	background: $black;
+	position: relative;
+}
+
+.white-dwarf {
+	width: 0.12em; height: 0.12em;
+	box-shadow: 0px 0px #fff;
+	background: #fff;
+	@include star();
+}
+
+.yellow-dwarf {
+	width: 0.15em; height: 0.15em;
+	box-shadow: 0px 0px 1px 0px #fff;
+	background: $blue;
+	@include star();
+}
+
+.blue-dwarf {
+	width: 0.1em; height: 0.1em;
+	box-shadow: 0px 0px #fff;
+	background: #fff;	
+	@include star();
+}
+
+.red-giant {
+	width: 0.05em; height: 0.05em;
+	box-shadow: 0px 0px  #fff;
+	background: $blue;
+ 	@include star();
+}
+	

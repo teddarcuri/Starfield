@@ -1,0 +1,31 @@
+// Animation
+@mixin twinkle() {
+	@-webkit-keyframes twinkle {
+	  0%   { opacity: 0.8; -webkit-transform: scale(1);}
+	  50%  { opacity: 0.2; -webkit-transform: scale(1.25); }
+	  100% { opacity: 0.8; -webkit-transform: scale(1); }
+	}
+	@-moz-keyframes twinkle {
+	  0%   { opacity: 0.8; }
+	  50%  { opacity: 0.2; transform: scale(3); }
+	  100% { opacity: 0.8; }
+	}
+	@-o-keyframes twinkle {
+	  0%   { opacity: 0.8; }
+	  50%  { opacity: 0.2; transform: scale(3); }
+	  100% { opacity: 0.8; }
+	}
+	@keyframes twinkle {
+	  0%   { opacity: 0.8; }
+	  50%  { opacity: 0.2; transform: scale(3); }
+	  100% { opacity: 0.8; }
+	}
+}
+
+@mixin star() {
+	border-radius: 200%;
+	position: absolute;
+	display: inline-block;
+	opacity: 0.8;
+}
+
