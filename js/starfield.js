@@ -41,7 +41,7 @@ function Starfield(min, max) {
 }
 
 // Create the starfield
-var starfield = new Starfield(1, 50);
+var starfield = new Starfield(200, 300);
 
 
 
