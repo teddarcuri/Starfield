@@ -1,24 +1,32 @@
 // Animation
 @mixin twinkle() {
 	@-webkit-keyframes twinkle {
-	  0%   { opacity: 0.8; -webkit-transform: scale(1);}
-	  50%  { opacity: 0.2; -webkit-transform: scale(1.25); }
-	  100% { opacity: 0.8; -webkit-transform: scale(1); }
+	  0%   { opacity: 0.5; }
+	  25%  { opacity: 0.8; }
+	  50%  { opacity: 0.2; transform: scale(1.5); }
+	  75%  { opacity: 0.8; }
+	  100% { opacity: 0.5; }
 	}
 	@-moz-keyframes twinkle {
-	  0%   { opacity: 0.8; }
-	  50%  { opacity: 0.2; transform: scale(3); }
-	  100% { opacity: 0.8; }
+	  0%   { opacity: 0.5; }
+	  25%  { opacity: 0.8; }
+	  50%  { opacity: 0.2; transform: scale(1.5); }
+	  75%  { opacity: 0.8; }
+	  100% { opacity: 0.5; }
 	}
 	@-o-keyframes twinkle {
-	  0%   { opacity: 0.8; }
-	  50%  { opacity: 0.2; transform: scale(3); }
-	  100% { opacity: 0.8; }
+	  0%   { opacity: 0.5; }
+	  25%  { opacity: 0.8; }
+	  50%  { opacity: 0.2; transform: scale(1.5); }
+	  75%  { opacity: 0.8; }
+	  100% { opacity: 0.5; }
 	}
 	@keyframes twinkle {
-	  0%   { opacity: 0.8; }
-	  50%  { opacity: 0.2; transform: scale(3); }
-	  100% { opacity: 0.8; }
+	  0%   { opacity: 0.5; }
+	  25%  { opacity: 0.8; }
+	  50%  { opacity: 0.2; transform: scale(1.5); }
+	  75%  { opacity: 0.8; }
+	  100% { opacity: 0.5; }
 	}
 }
 
@@ -26,6 +34,5 @@
 	border-radius: 200%;
 	position: absolute;
 	display: inline-block;
-	opacity: 0.8;
 }
 
