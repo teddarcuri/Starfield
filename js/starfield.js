@@ -7,15 +7,13 @@ function Starfield(min, max) {
 
 	// Get starfield dimensions
 	this.canvas = document.getElementById("starfield");
-	this.canvasHeight = this.canvas.offsetHeight;
-	this.canvasWidth = this.canvas.offsetWidth;
 
 	// Create Stars
 	for ( var i = 0; i < this.stars ; i++ ) {
 
 		// Choose random star type
 		var starTypes = new Array();
-		starTypes[0] = "yellow-dwarf"; // Does not twinkle
+		starTypes[0] = "yellow-dwarf"; 
 		starTypes[1] = "white-dwarf";
 		starTypes[2] = "blue-dwarf";
 		starTypes[3] = "red-giant";
@@ -28,15 +26,9 @@ function Starfield(min, max) {
 		// Generate random twinkle
 		var animationFrequency = Math.random() * (10 - 2) + 2;
 		var animationDelay = Math.floor(Math.random() * 2);
-
-		// Populate Starfield (Yellow Dwarfs do not twinkle)
-		if ( randStarType != 0) {
-			// With Twinkle Animation
-			this.canvas.innerHTML += '<div style="margin-left:' + coordinateX + '%; margin-top:' + coordinateY + '%; -webkit-animation: twinkle ' + animationFrequency  + "s " + animationDelay  + 's infinite; -moz-animation: twinkle ' + animationFrequency  + "s " + animationDelay  + 's infinite; animation: twinkle ' + animationFrequency  + "s " + animationDelay  + 's infinite; " class="' + starTypes[randStarType] + '"></div>' ;
-		} else {
-			// No Twinkle -- Yellow dwarfs
-			this.canvas.innerHTML += '<div style="margin-left:' + coordinateX + '%; margin-top:' + coordinateY + '%;" class="' + starTypes[randStarType] + '"></div>' ;
-		}
+		
+		// Populate Starfield
+		this.canvas.innerHTML += '<div style="margin-left:' + coordinateX + '%; margin-top:' + coordinateY + '%; -webkit-animation: twinkle ' + animationFrequency  + "s " + animationDelay  + 's infinite; -moz-animation: twinkle ' + animationFrequency  + "s " + animationDelay  + 's infinite; animation: twinkle ' + animationFrequency  + "s " + animationDelay  + 's infinite; " class="' + starTypes[randStarType] + '"></div>' ;	
 	} 
 }
 
